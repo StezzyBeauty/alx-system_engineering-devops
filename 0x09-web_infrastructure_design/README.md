@@ -25,7 +25,7 @@ Web Applications Infrastructure/Web Infrastructure also called internet infrastr
 - 1 database (MySQL)
 - 1 domain name foobar.com configured with a www record that points to your server IP 8.8.8.8
 
-## Distrubuted Web Infrasture
+## Distrubuted Web Infrastructure
 
 - 2 servers
 - 1 web server (Nginx)
