@@ -7,6 +7,23 @@ sudo apt-get update -y
 
 sudo apt-get install nginx -y
 
-echo 'Hello World!' > /var/www/html/index.html
+# Configuration
+mkdir /etc/nginx/html
 
+# Creating Sample Page
+touch /etc/nginx/html/index.html
+echo 'Hello World!' > /etc/nginx/html/index.html
+
+# Creating the Server Block File
+echo "server { 
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	
+	root /etc/nginx/html;
+	index index.html index.htm index.nginx-debian.html;
+	server_name _;
+}
+" > /etc/nginx/sites-available/default
+
+# Restart Nginx
 service nginx restart
