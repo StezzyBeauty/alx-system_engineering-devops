@@ -8,7 +8,7 @@ Get Apache to run on the container and to return a page containing Hello Holbert
 ## Try It On Your Machine 
 
 ```
-git clone https://github.com/sammykingx/alx-system_engineering-devops.git
+git clone https://github.com/StezzyBeauty/alx-system_engineering-devops.git
 cd 0x0D-web_stack_debugging_0
 cat FILENAME
 docker run -p 8080:80 -d -it CONTAINER_ID
