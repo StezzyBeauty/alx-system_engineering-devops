@@ -16,7 +16,7 @@ frontend  stezzy-frontend
 backend stezzy-backend
         balance roundrobin
         server 147637-web-01 54.234.63.197:80 check
-        server 147637-web-02 52.87.232.156:80 check
+        server 147637-web-02 34.224.94.163:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
