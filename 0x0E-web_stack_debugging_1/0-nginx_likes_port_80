@@ -2,5 +2,5 @@
 # script that restores the default server port
 # debugging nginx port 80
 
-sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+cp -r /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
